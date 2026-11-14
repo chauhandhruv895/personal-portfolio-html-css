@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhruv Chauhan - Responsive Portfolio</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; }
+header { background: #1e293b; color: #fff; padding: 2rem 1rem; text-align: center; }
+nav { margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; }
+nav a { color: #38bdf8; text-decoration: none; font-weight: bold; }
+main { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+section { margin-bottom: 2.5rem; }
+.skills-grid, .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin-top: 1rem; }
+.skill-item, .project-card { border: 1px solid #cbd5e1; border-radius: 8px; padding: 1rem; background: #f8fafc; text-align: center; }
+form { display: flex; flex-direction: column; gap: 0.75rem; max-width: 500px; }
+input, textarea, button { padding: 0.75rem; border: 1px solid #cbd5e1; border-radius: 6px; font-size: 1rem; }
+button { background: #0284c7; color: #fff; border: none; cursor: pointer; }
+</style>
+</head>
+<body>
+<header>
+<h1>Dhruv Chauhan</h1>
+<p>Web Developer &amp; B.Tech CSE-DS Student</p>
+<nav>
+<a href="#about">About</a>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+<main>
+<section id="about">
+<h2>About Me</h2>
+<p>I am Dhruv Chauhan, a Computer Science (Data Science) undergraduate passionate about semantic HTML5, responsive CSS3 layouts, and full-stack web development.</p>
+</section>
+<section id="skills">
+<h2>Skills</h2>
+<div class="skills-grid">
+<div class="skill-item">HTML</div>
+<div class="skill-item">CSS</div>
+<div class="skill-item">JS</div>
+<div class="skill-item">React</div>
+<div class="skill-item">Node.js</div>
+<div class="skill-item">MongoDB</div>
+</div>
+</section>
+<section id="projects">
+<h2>Projects</h2>
+<div class="projects-grid">
+<article class="project-card"><h3>Portfolio Site</h3><p>Responsive semantic HTML5 and CSS3 showcase.</p></article>
+<article class="project-card"><h3>Task Manager</h3><p>Dynamic To-Do web app using JavaScript and localStorage.</p></article>
+</div>
+</section>
+<section id="contact">
+<h2>Contact</h2>
+<form>
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea rows="4" placeholder="Your Message" required></textarea>
+<button type="submit">Send Message</button>
+</form>
+</section>
+</main>
+</body>
+</html>
